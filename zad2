@@ -1,0 +1,51 @@
+/*Liczba doskonała jest to taka liczba naturalna, która jest sumą wszystkich 
+swych dzielników właściwych (to znaczy od niej mniejszych). Najmniejszą liczbą 
+doskonałą jest 6, ponieważ jej dzielnikami właściwymi są 1, 2, 3 i 1 + 2 + 3 = 6.
+ Napisz program, który znajduje wszystkie liczby doskonałe w zadanym przedziale oraz ich liczbę.*/
+
+
+ #include <stdio.h>
+ #include <stdlib.h>
+
+int czy_doskonala(int n)
+{
+    int num=0;
+    for (int i = 1; i < n; i++)
+    {
+        if (n%i==0)
+        {
+            num+=i;
+        }
+        
+    }
+
+    if (num==n)
+    {
+        return 1;
+    }
+
+    else
+    {
+        return 0;
+    }
+    
+    
+
+
+}
+
+ int main()
+
+ {
+
+
+    int n;
+    int cnt;
+
+
+    
+
+
+    return 0;
+
+ }
